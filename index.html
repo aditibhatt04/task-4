@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Website Example</title>
+    <style>
+    body {
+      font-size: 18px;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      display: flex;
+      flex-direction: row;
+      gap: 40px;
+      padding: 32px;
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 8px 32px rgba(60, 100, 180, 0.15);
+    }
+    nav {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      background: #f7f9fc;
+      padding: 18px 12px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(60, 100, 180, 0.07);
+      min-width: 140px;
+      align-items: flex-start;
+    }
+    nav a {
+      text-decoration: none;
+      color: #3a5ba0;
+      font-weight: 600;
+      font-size: 1.08em;
+      padding: 8px 16px;
+      border-radius: 6px;
+      transition: background 0.2s, color 0.2s;
+    }
+    nav a:hover {
+      background: #e0eafc;
+      color: #1a3a6c;
+    }
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    h1 {
+      font-size: 2.2em;
+      color: #2a3b5c;
+      margin-bottom: 12px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    p {
+      color: #4a5a6a;
+      margin-bottom: 24px;
+      font-size: 1.1em;
+    }
+   img {
+        width: 10cm;
+        max-width: 100%;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 0 4px 16px rgba(60, 100, 180, 0.10);
+        margin-top: 8px;
+} 
+    @media (max-width: 768px) {
+      .container {
+        width: 98%;
+        flex-direction: column;
+        gap: 20px;
+        padding: 12px;
+      }
+      nav {
+        flex-direction: row;
+        gap: 10px;
+        min-width: unset;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 6px;
+      }
+      body {
+        font-size: 16px;
+      }
+      h1, h2, h3 {
+        font-size: 1.3em;
+      }
+      /* Removed duplicate img rules */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </nav>
+    <main>
+      <h1>Welcome to My Responsive Website</h1>
+      <p>This page adapts to mobile screens using CSS media queries. Resize your browser or use Chrome DevTools to test!</p>
+      <img src="myimage.jpg" alt="Sample Image">
+    </main>
+  </div>
+</body>
