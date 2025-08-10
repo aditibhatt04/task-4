@@ -49,8 +49,8 @@ _![Website Preview](./ss2.jpg)
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/the-elevate-labs.git
-
+   git clone https://github.com/aditibhatt04/task-4
 
 ## Author 
+
  - Aditi Bhatt - Frontend Developer
